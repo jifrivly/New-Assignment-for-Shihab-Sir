@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Authentication Control Sample App</span>
+
+    <button mat-button routerLink="dashboard" routerLinkActive="router-link-active">Dashboard</button>
+    <button mat-button [routerLink]="['']" routerLinkActive="router-link-active">Login</button>
+    <button mat-button [routerLink]="['register']" routerLinkActive="router-link-active">Register</button>
+  </mat-toolbar-row>
+</mat-toolbar>

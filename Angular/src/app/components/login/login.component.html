@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Login Form</mat-card-title>
+  </mat-card-header>
+  <!-- <form name="loginForm" (ngForm)="login()"> -->
+  <mat-card-content>
+    <form name="loginForm" (ngForm)="login()">
+      <mat-form-field [formGroup]="loginForm" appearance="outline">
+        <mat-label>Enter the username </mat-label>
+        <input matInput formControlName="username" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field [formGroup]="loginForm" appearance="outline">
+        <mat-label>Enter password </mat-label>
+        <input matInput formControlName="password" type="password" required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </form>
+  </mat-card-content>
+  <!-- <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </mat-card-actions> -->
+  <!-- </form> -->
+</mat-card>
